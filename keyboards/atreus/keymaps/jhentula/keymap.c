@@ -11,15 +11,13 @@
 #define	GUI 5
 #define	MOUS 6
 #define	GAME 7
-#define	GAMO 8
-#define	MSFNC 9
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [ALPH] = {
   {KC_Q,	    KC_W,		   KC_E,		  KC_R,		    KC_T,	    KC_TRNS,	    KC_Y,		KC_U,		 KC_I,		 KC_O,		   KC_P},	
   {KC_A,	    LT(FKEY, KC_S),	   LT(NUMS, KC_D),	  LT(CURS,KC_F),    KC_G,	    KC_TRNS,	    KC_H,		KC_J,		 KC_K,		 KC_L,		   KC_SCLN},	
-  {KC_Z,	    KC_X,		   KC_C,		  KC_V,		    KC_B,	    KC_LCTL,	    KC_N,		KC_M,		 KC_COMM,	 KC_DOT,	   KC_SLSH},	
-  {LT(GUI,KC_ESC),  TG(MOUS),		   KC_LGUI,	      LT(SYMB,KC_TAB),	  SFT_T(KC_BSPC),   KC_LALT,	    RSFT_T(KC_SPC),	LT(SYMB,KC_QUOT),TG(GAME),	 TG(MSFNC),	   KC_ENT}
+  {KC_Z,	    KC_X,		   KC_C,		  KC_V,		    KC_B,	    LALT_T(KC_ESC),	    KC_N,		KC_M,		 KC_COMM,	 KC_DOT,	   KC_SLSH},	
+  {LT(GUI,KC_ESC),  TG(MOUS),		   KC_LGUI,	      LT(SYMB,KC_TAB),	  SFT_T(KC_BSPC),   RCTL_T(KC_ENT),	    RSFT_T(KC_SPC),	LT(SYMB,KC_QUOT),KC_TAB,	 TG(GAME),	   KC_ENT}
 },
 [NUMS] = {
   {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_ASTR,	 KC_SLSH,	 KC_TRNS,	 KC_TRNS,		KC_7,		 KC_8,		 KC_9,		 KC_MINS},	
@@ -57,35 +55,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_TRNS,		KC_TRNS,	 KC_TRNS,	KC_TRNS,	 KC_TRNS},	
   {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_BTN1,		KC_BTN2,	 KC_TRNS,	KC_TRNS,	 KC_TRNS}
 },
-[MSFNC]	= {
-  {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_TRNS,		KC_TRNS,	 KC_FN0,	KC_TRNS,	 KC_TRNS},	
-  {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_TRNS,		KC_FN2,		 KC_FN1,	KC_FN3,		 KC_TRNS},	
-  {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_TRNS,		KC_TRNS,	 KC_TRNS,	KC_TRNS,	 KC_TRNS},	
-  {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_FN8,		KC_FN9,		KC_TRNS,	KC_TRNS,	 KC_TRNS}
-},
 [GAME] = {
   {KC_Q,	    KC_W,		   KC_E,		  KC_R,		    KC_T,	    KC_TRNS,	    KC_Y,		KC_U,		 KC_I,		 KC_O,		   KC_P},	
   {KC_A,	    KC_S,		   KC_D,		  KC_F,		    KC_G,	    KC_TRNS,	    KC_H,		KC_J,		 KC_K,		 KC_L,		   KC_SCLN},	
   {KC_Z,	    KC_X,		   KC_C,		  KC_V,		    KC_B,	    KC_LCTL,	    KC_N,		KC_M,		 KC_COMM,	 KC_DOT,	   KC_SLSH},	
-  {KC_TRNS,	    KC_TRNS,		   TG(GAMO),		  KC_TAB,	    KC_SPC,	    KC_LALT,	    KC_SPC,		KC_QUOT,	 KC_TRNS,	 KC_ESC,	   KC_ENT}
-},
-[GAMO] = {
-  {KC_Q,	    KC_W,		   KC_E,		  KC_R,		    KC_T,	    KC_TRNS,	    KC_Y,		KC_U,		 KC_FN0,	 KC_O,		   KC_P},	
-  {KC_A,	    KC_S,		   KC_D,		  KC_F,		    KC_G,	    KC_TRNS,	    KC_H,		KC_FN2,		 KC_FN1,	 KC_FN3,	   KC_SCLN},	
-  {KC_Z,	    KC_X,		   KC_C,		  KC_V,		    KC_B,	    KC_LCTL,	    KC_N,		KC_M,		 KC_COMM,	 KC_DOT,	   KC_SLSH},	
-  {KC_TRNS,	    KC_TRNS,		   KC_TRNS,		  KC_TAB,	    KC_SPC,	    KC_LALT,	    KC_FN8,		KC_FN9,		 KC_TRNS,	 KC_ESC,	   KC_ENT}
+  {KC_TRNS,	    KC_TRNS,		   KC_TRNS,		  KC_TAB,	    KC_SPC,	    KC_LALT,	    KC_SPC,		KC_QUOT,	 KC_TRNS,	 KC_ESC,	   KC_ENT}
 }
 };
 
-const uint16_t PROGMEM fn_actions[] = {
-    [0]	= ACTION_MOUSEKEY(KC_MS_U), // mouse movement
-    [1]	= ACTION_MOUSEKEY(KC_MS_D),
-    [2]	= ACTION_MOUSEKEY(KC_MS_L),
-    [3]	= ACTION_MOUSEKEY(KC_MS_R),
-    [4]	= ACTION_MOUSEKEY(KC_WH_U), // wheel
-    [5]	= ACTION_MOUSEKEY(KC_WH_D),
-    [6]	= ACTION_MOUSEKEY(KC_WH_L),
-    [7]	= ACTION_MOUSEKEY(KC_WH_R),
-    [8]	= ACTION_MOUSEKEY(KC_BTN1), // clicks
-    [9]	= ACTION_MOUSEKEY(KC_BTN2)
-};
