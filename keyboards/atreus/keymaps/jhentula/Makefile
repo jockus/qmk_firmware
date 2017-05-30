@@ -1,4 +1,8 @@
-MOUSEKEY_ENABLE = yes
+EXTRAKEY_ENABLE=no
+UNICODE_ENABLE=no
+MOUSEKEY_ENABLE=yes
+SLEEP_LED_ENABLE=no
+MIDI_ENABLE=no
 
 ifndef QUANTUM_DIR
     include ../../../../Makefile

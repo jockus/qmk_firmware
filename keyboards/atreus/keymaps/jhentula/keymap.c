@@ -19,16 +19,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   {KC_Z,	    KC_X,		   KC_C,		  KC_V,		    KC_B,	    LALT_T(KC_ESC),	    KC_N,		KC_M,		 KC_COMM,	 KC_DOT,	   KC_SLSH},	
   {LT(GUI,KC_ESC),  TG(MOUS),		   KC_LGUI,	      LT(SYMB,KC_TAB),	  SFT_T(KC_BSPC),   RCTL_T(KC_ENT),	    RSFT_T(KC_SPC),	LT(SYMB,KC_QUOT),KC_TAB,	 TG(GAME),	   KC_ENT}
 },
-[NUMS] = {
-  {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_ASTR,	 KC_SLSH,	 KC_TRNS,	 KC_TRNS,		KC_7,		 KC_8,		 KC_9,		 KC_MINS},	
-  {KC_TRNS,	 KC_TRNS,		    KC_EQL,		    KC_PLUS,	 KC_MINS,	 KC_TRNS,	 KC_LPRN,		KC_4,		 KC_5,		 KC_6,		 KC_PLUS},	
-  {KC_TRNS,	 KC_TRNS,		    KC_DOT,		    KC_COMM,	 KC_TRNS,	 KC_TRNS,	 KC_RPRN,		KC_1,		 KC_2,		 KC_3,		 KC_SLSH},	
-  {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_0,			KC_TRNS,	 KC_DOT,	 KC_EQL,	 KC_TRNS}
-},
 [CURS] = {
-  {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_DEL,		KC_PGUP,	 KC_TRNS,	 KC_TRNS,	 KC_TRNS},	
+  {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_DEL,		KC_HOME,	 KC_END,	 KC_TRNS,	 KC_TRNS},	
   {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_LEFT,		KC_DOWN,	 KC_UP,		 KC_RGHT,	 KC_TRNS},	
-  {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_TRNS,		KC_PGDN,	 KC_TRNS,	 KC_TRNS,	 KC_TRNS},	
+  {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_TRNS,		KC_PGDN,	 KC_PGUP,	 KC_TRNS,	 KC_TRNS},	
   {KC_TRNS,	 KC_TRNS,		    KC_TRNS,		    KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_TRNS,		KC_TRNS,	 KC_TRNS,	 KC_TRNS,	 KC_TRNS}
 },
 [SYMB] = {
